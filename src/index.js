@@ -134,17 +134,21 @@ export default {
         defaultVal = item.$default
       }
       defaultVal !== undefined &&
-        this.updateValue({id: item.$id, value: defaultVal})
+        this.updateValue({id: item.$id, value: defaultVal}, true)
     },
     /**
      * 更新表单数据
      * @param  {String} options.id 表单ID
      * @param  {All} options.value 表单数据
      */
-    updateValue({id, value}) {
+    updateValue({id, value}, isInit = false) {
       this.value = Object.assign({}, this.value, {
         [id]: value
       })
+
+      if (!isInit) {
+        this.$emit('on-change', {key: id, value})
+      }
     },
     /**
      * 对外提供获取表单数据的函数
