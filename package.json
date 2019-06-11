@@ -1,14 +1,14 @@
 {
-  "name": "@femessage/el-form-renderer",
+  "name": "@1024-fontend-group/el-form-renderer",
   "version": "1.5.5",
   "description": "render form-item easily",
   "author": "leezng <leezng@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FEMessage/el-form-renderer.git"
+    "url": "https://github.com/1024-fontend-group/el-form-renderer"
   },
-  "contributors": ["https://github.com/FEMessage"],
+  "contributors": ["https://github.com/1024-fontend-grou"],
   "keywords": ["vue", "element", "render", "form", "component"],
   "files": ["src", "dist", "yarn.lock"],
   "main": "dist/el-form-renderer.umd.js",
@@ -32,7 +32,7 @@
     "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
     "release": "gren release --override"
   },
-  "homepage": "https://github.com/FEMessage/el-form-renderer",
+  "homepage": "https://github.com/1024-fontend-group/el-form-renderer",
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-transform-runtime": "^7.4.3",
